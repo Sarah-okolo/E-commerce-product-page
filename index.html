@@ -1,140 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title> E-commerce product page</title>
-  
-  <link rel="stylesheet" href="styles.css">
-  
-  <link rel="stylesheet" href="https://fonts.google.com/specimen/Kumbh+Sans">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>E-commerce product page</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Kumbh+Sans" />
 </head>
+
 <body>
+  <header>
+    <div id="logoAndMenuHolder">
+      <div id="burgerMenuAndLogoHolder">
+        <img src="images/icon-menu.svg" alt="hamburger menu icon" id="burgerMenuIcon" />
+        <img src="images/logo.svg" alt="company's logo" id="logo" />
+      </div>
 
- <header>
- 				
- 		<div id="logoAndMenuHolder">
- 				<div id="burgerMenuAndLogoHolder">
- 						<img src="images/icon-menu.svg" alt="hamburger menu icon" id="burgerMenuIcon">
- 						<img src="images/logo.svg" alt="company's logo" id="logo">
- 				</div>
- 				
- 				<nav>	
- 							<div id="menuBackgroundOverlay">
- 							  <div id="menuContainer">
- 												<img src="images/icon-close.svg" alt="close menu icon" id="closeMenu">
- 												<ul>
- 														<li> Collections </li>
- 														<li> Men </li>
- 														<li> Women </li>
- 														<li> About </li>
- 														<li> Contact </li>
- 										  	</ul>
- 									</div>
- 							</div>
- 				</nav>
- 		</div>
- 				
- 				
- 		<div id="cartAndProfileIconHolder">
- 				<div id="cartIconHolder">
- 			   	<small id="itemInCartAmount">0</small>
- 						<img src="images/icon-cart.svg" alt="cart icon" id="cartIcon">
- 		  	</div>
- 		  	
- 		  	<img src="images/image-avatar.png" alt="user profile icon" id="userProfileImage">
- 		  	
- 				<div id="cartedItemsHolder" class="hidee">
- 						<p id="cartTxt">Cart</p>
- 						<div id="cartedItems">
- 								<p id="emptyCartTxt">Your cart is empty.</p>
- 								
- 				  	<div id="itemToCheckoutInfo">
- 					   	<img src="images/image-product-1.jpg" alt="item bought image" id="itemBoughtImg">
- 							 <div id="itemBoughtInfo">
- 							 			<p id="itemBoughtInfoTxt">Autumn Limited Edition...</p>
- 							 		 <span id="itemPrice">$125.00 x </span>
- 							 		 <span id="timesItemsInCart">0</span>
- 							 		 <span id="totalAmountOfGoodsInCart"> $0</span>
- 							 	</div> 
- 										<!-- BIN ICON SVG -->	 
- 				    	<svg width="14" height="16" id="binIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M0 2.625V1.75C0 1.334.334 1 .75 1h3.5l.294-.584A.741.741 0 0 1 5.213 0h3.571a.75.75 0 0 1 .672.416L9.75 1h3.5c.416 0 .75.334.75.75v.875a.376.376 0 0 1-.375.375H.375A.376.376 0 0 1 0 2.625Zm13 1.75V14.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 1 14.5V4.375C1 4.169 1.169 4 1.375 4h11.25c.206 0 .375.169.375.375ZM4.5 6.5c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Zm3 0c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Zm3 0c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Z" id="a"/></defs><use  fill-rule="nonzero" xlink:href="#a"/></svg> 
-		     </div>
-	    	<button id="checkoutBtn">Checkout</button>
-		  </div>
-		</div>
- 	</div>
- 				
-</header>
+      <nav>
+        <div id="menuBackgroundOverlay">
+          <div id="menuContainer">
+            <img src="images/icon-close.svg" alt="close menu icon" id="closeMenu" />
+            <ul>
+              <li>Collections</li>
+              <li>Men</li>
+              <li>Women</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
 
+    <div id="cartAndProfileIconHolder">
+      <div id="cartIconHolder">
+        <small id="itemInCartAmount">0</small>
+        <img src="images/icon-cart.svg" alt="cart icon" id="cartIcon" />
+      </div>
 
-<main>
-				<div id="lightbox">
-							<div id="lightboxContents">
-											<!-- CLOSE LIGHTBOX ICON SVG -->
-						   	<svg width="14" height="15" class="closeLightboxIcon" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill-rule="evenodd"/></svg>
-				   </div>
-				</div>
-				
-	   <div id="productsContainer">
-       <div id="productImageLargeViewHolder">
-								<img src="images/image-product-1.jpg" alt="product large view" id="productLargeView">
-					 <!-- PREVIOUS ICON SVG -->
-						  	<svg width="13" height="18" class="previousIcon imgNavIcons" id="prev" xmlns="http://www.w3.org/2000/svg"><path d="m21 15 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
-    <!-- NEXT ICON SVG -->
-				   		<svg width="13" height="18" class="nextIcon imgNavIcons" id="nxtt" xmlns="http://www.w3.org/2000/svg"><path d="m19 15 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
-       </div>
-				
-			   	<div id="imageThumbnailsHolder">
-								<img src="images/image-product-1.jpg" alt="product"  class="tmbnl-1 thumbnails">
-								<img src="images/image-product-2.jpg" alt="product"  class="tmbnl-2 thumbnails">
-								<img src="images/image-product-3.jpg" alt="product"  class="tmbnl-3 thumbnails" >
-								<img src="images/image-product-4.jpg" alt="product" class="tmbnl-4 thumbnails" >
-       </div>
-		 </div>
-				
-		 <div id="productsInfoContainer">
-						<h1 id="sneakerCompany">SNEAKER COMPANY</h1>
-						<h2 id="fallLimitedEditionTxt">  Fall Limited Edition Sneakers</h2>
-						<p id="sneakersInfoTxt">These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer. </p>
-       <div id="pricingInfoContainer">
-       			<div id="currentPriceHolder">
-       			  <span id="currentPrice">$125.00</span>
-       					<small id="percentOff"> 50% </small>		
-       			</div>
-       			<div id="previousPriceHolder">
-       					<s id="oldPrice"> $250.00 </s>
-       		 </div>
-       </div>
-       
-       <div id="cartingFunctionsHolder">
-       	  	<div id="productsAmountToBuyContainer">
-       	  			<img src="images/icon-minus.svg" alt="minus icon" class="minus arithmeticIcons">
-       	  			<div id="numberOfItemsToCart">0</div>
-       	  			<img src="images/icon-plus.svg" alt="add icon" class="plus arithmeticIcons">
-       	  </div>
-       	  	<button id="addToCart"><img src="images/icon-cart.svg" alt="cart icon" id="cartingIcon">Add to cart</button>
-       </div>
-				</div>
-			
-</main>
+      <img src="images/image-avatar.png" alt="user profile icon" id="userProfileImage" />
 
-<footer>
-   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Sarah okolo</a>.
-  </div>
-  
-</footer>
-  
+      <div id="cartedItemsHolder" class="hidee">
+        <p id="cartTxt">Cart</p>
+        <div id="cartedItems">
+          <p id="emptyCartTxt">Your cart is empty.</p>
 
-<script src="app.js"></script>
+          <div id="itemToCheckoutInfo">
+            <img src="images/image-product-1.jpg" alt="item bought image" id="itemBoughtImg" />
+            <div id="itemBoughtInfo">
+              <p id="itemBoughtInfoTxt">Autumn Limited Edition...</p>
+              <span id="itemPrice">$125.00 x </span>
+              <span id="timesItemsInCart">0</span>
+              <span id="totalAmountOfGoodsInCart"> $0</span>
+            </div>
+            <!-- BIN ICON SVG -->
+            <svg width="14" height="16" id="binIcon" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+                <path
+                  d="M0 2.625V1.75C0 1.334.334 1 .75 1h3.5l.294-.584A.741.741 0 0 1 5.213 0h3.571a.75.75 0 0 1 .672.416L9.75 1h3.5c.416 0 .75.334.75.75v.875a.376.376 0 0 1-.375.375H.375A.376.376 0 0 1 0 2.625Zm13 1.75V14.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 1 14.5V4.375C1 4.169 1.169 4 1.375 4h11.25c.206 0 .375.169.375.375ZM4.5 6.5c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Zm3 0c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Zm3 0c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Z"
+                  id="a" />
+              </defs>
+              <use fill-rule="nonzero" xlink:href="#a" />
+            </svg>
+          </div>
+          <button id="checkoutBtn">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="lightbox">
+      <div id="lightboxContents">
+        <!-- CLOSE LIGHTBOX ICON SVG -->
+        <svg width="14" height="15" class="closeLightboxIcon" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+            fill-rule="evenodd" />
+        </svg>
+      </div>
+    </div>
+
+    <div id="productsContainer">
+      <div id="productImageLargeViewHolder">
+        <img src="images/image-product-1.jpg" alt="product large view" id="productLargeView" />
+        <!-- PREVIOUS ICON SVG -->
+        <svg width="13" height="18" class="previousIcon imgNavIcons" id="prev" xmlns="http://www.w3.org/2000/svg">
+          <path d="m21 15 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd" />
+        </svg>
+        <!-- NEXT ICON SVG -->
+        <svg width="13" height="18" class="nextIcon imgNavIcons" id="nxtt" xmlns="http://www.w3.org/2000/svg">
+          <path d="m19 15 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd" />
+        </svg>
+      </div>
+
+      <div id="imageThumbnailsHolder">
+        <img src="images/image-product-1.jpg" alt="product" class="tmbnl-1 thumbnails" />
+        <img src="images/image-product-2.jpg" alt="product" class="tmbnl-2 thumbnails" />
+        <img src="images/image-product-3.jpg" alt="product" class="tmbnl-3 thumbnails" />
+        <img src="images/image-product-4.jpg" alt="product" class="tmbnl-4 thumbnails" />
+      </div>
+    </div>
+
+    <div id="productsInfoContainer">
+      <h1 id="sneakerCompany">SNEAKER COMPANY</h1>
+      <h2 id="fallLimitedEditionTxt">Fall Limited Edition Sneakers</h2>
+      <p id="sneakersInfoTxt">
+        These low-profile sneakers are your perfect casual wear companion.
+        Featuring a durable rubber outer sole, they’ll withstand everything
+        the weather can offer.
+      </p>
+      <div id="pricingInfoContainer">
+        <div id="currentPriceHolder">
+          <span id="currentPrice">$125.00</span>
+          <small id="percentOff"> 50% </small>
+        </div>
+        <div id="previousPriceHolder">
+          <s id="oldPrice"> $250.00 </s>
+        </div>
+      </div>
+
+      <div id="cartingFunctionsHolder">
+        <div id="productsAmountToBuyContainer">
+          <img src="images/icon-minus.svg" alt="minus icon" class="minus arithmeticIcons" />
+          <div id="numberOfItemsToCart">0</div>
+          <img src="images/icon-plus.svg" alt="add icon" class="plus arithmeticIcons" />
+        </div>
+        <button id="addToCart">
+          <img src="images/icon-cart.svg" alt="cart icon" id="cartingIcon" />Add to cart
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+        href="#">Sarah okolo</a>.
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
+
 </html>
