@@ -75,7 +75,7 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - (https://www.frontendmentor.io/profile/sarah-okolo)
+- [Sarah Okolo](https://www.frontendmentor.io/profile/sarah-okolo)
 
 
 ## Acknowledgments
