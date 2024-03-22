@@ -32,18 +32,18 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Sarah-okolo/E-commerce-product-page)
-- Live Site URL: [Add live site URL here](https://ecommerce-product-page-by-sarah-okolo.netlify.app/)
+- Solution URL: [E-commerce-product-page](https://github.com/Sarah-okolo/E-commerce-product-page)
+- Live Site URL: [ecommerce-product-page-by-sarah-okolo](https://ecommerce-product-page-by-sarah-okolo.netlify.app/)
 
 
 ## My process
    
    - I created the html file first
-   - Added the css, (designed mobile first), so i designed for the desktop view after i was done with the mobile view.
-   - Created the menu functions in js for both the mobile and desktop view.
+   - Added the CSS, (designed mobile first), so I designed for the desktop view after I was done with the mobile view.
+   - Created the menu functions in JS for both the mobile and desktop view.
    - Implemented the carting functions.
-   - Created the images view functions.
-   - Created the lightbox for the desktop view, and i was done.
+   - Created the image view functions.
+   - Created the lightbox for the desktop view, and I was done.
    
 ### Built with
 
@@ -57,20 +57,20 @@ Users should be able to:
 
 ### What I learned
 
- This challange helped me learn quite a few new things...
+ This challenge helped me learn quite a few new things...
  - I learned how to clone an existing element in the dom, into another element, and display the output.
   you can see that in line 150 of the JavaScript file. 
- - I Was able to learn how to create a function image lightbox with vanilla js. you can also see how i implemented that in line 134 of the js file.
- - I learned how to create an items carting feature, which updates the cart according to how many items were carted. First time doing that, so i was really excited as i was able to figure that out. you can check out how i implemented that from line 86 to line 124 in the js file.
+ - I Was able to learn how to create a function image lightbox with vanilla js. you can also see how I implemented that in line 134 of the js file.
+ - I learned how to create an items carting feature, which updates the cart according to how many items were carted. First time doing that, so I was excited as I was able to figure that out. you can check out how I implemented that from line 86 to line 124 in the js file.
  
 
 ### Continued development
- I am looking forward to learn and really understand how to use React for development, and i might be doing that in my next project (really excited about this journey)
+ I am looking forward to learning and really understanding how to use React for development, and I might be doing that in my next project (really excited about this journey)
  
  
 ### Useful resources
  **(https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore)**
- This is an amazing article which helped me finally understand how to clone elements. I'd recommend it to anyone still learning this concept.
+ This is an amazing article that helped me finally understand how to clone elements. I'd recommend it to anyone still learning this concept.
 
 
 ## Author
